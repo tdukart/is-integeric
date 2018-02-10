@@ -6,7 +6,9 @@
   "scripts": {
     "build": "webpack",
     "prepublish": "webpack",
-    "test": "MOCHA_FILE=test-results/test-results.xml mocha --reporter mocha-circleci-reporter"
+    "test": "MOCHA_FILE=test-results/test-results.xml mocha --reporter mocha-circleci-reporter",
+    "lint": "eslint src",
+    "lint-fix": "eslint --fix src"
   },
   "author": "Todd Dukart <tdukart@mechninja.com>",
   "license": "MIT",
