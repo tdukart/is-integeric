@@ -1,2 +1,2 @@
 # is-integeric
-Tests if a number is integer-ish.
+Lightweight, simple test to see if a number is integer-ish.
