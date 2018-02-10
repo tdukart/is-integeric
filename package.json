@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack",
     "prepublish": "webpack",
-    "test": "mocha --reporter mocha-circleci-reporter"
+    "test": "MOCHA_FILE=test-results/test-results.xml mocha --reporter mocha-circleci-reporter"
   },
   "author": "Todd Dukart <tdukart@mechninja.com>",
   "license": "MIT",

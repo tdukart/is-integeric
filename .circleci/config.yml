@@ -37,7 +37,10 @@ jobs:
       - run: npm run build
       - run: npm test
 
-      # store test results
-      - cp test-results.xml $CIRCLE_TEST_REPORTS/test-results.xml
+      - store_test_results:
+          path: test-results
 
+      - store_artifacts:
+          path: test-results
+          destination: test-results
 
