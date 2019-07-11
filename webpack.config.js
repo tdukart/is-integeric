@@ -12,7 +12,7 @@ var config = {
 		umdNamedDefine: true
 	},
 	module: {
-		loaders: [
+		rules: [
 			{
 				test: [ /\.js?$/ ],
 				exclude: /node_modules/,
