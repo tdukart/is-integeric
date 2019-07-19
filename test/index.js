@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 /* eslint-disable func-names, prefer-arrow-callback, no-var */
 var chai = require( 'chai' );
-var isIntegeric = require( '../dist' ).default;
+var isIntegeric = require( '../dist' );
 
 describe( 'isIntegeric', function () {
 	it( 'is true for integers', function () {

@@ -3,6 +3,6 @@ module.exports = {
   output: {
     file: 'dist/index.js',
     format: 'umd',
-    name: 'is-integeric',
+    name: 'isIntegeric',
   },
 };
