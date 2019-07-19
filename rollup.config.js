@@ -1,3 +1,5 @@
+var babelPlugin = require('rollup-plugin-babel');
+
 module.exports = {
   input: 'src/index.js',
   output: {
@@ -5,4 +7,7 @@ module.exports = {
     format: 'umd',
     name: 'isIntegeric',
   },
+  plugins: [
+    babelPlugin(),
+  ],
 };
