@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "types": "src/index.d.ts",
   "scripts": {
-    "build": "webpack",
-    "prepare": "webpack",
+    "build": "rollup --config",
+    "prepare": "rollup --config",
     "test": "MOCHA_FILE=test-results/test-results.xml mocha --reporter mocha-circleci-reporter -r jsdom-global/register",
     "lint": "eslint src",
     "lint-fix": "eslint --fix src"
@@ -14,8 +14,6 @@
   "author": "Todd Dukart <tdukart@mechninja.com>",
   "license": "MIT",
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "chai": "^4.1.2",
     "eslint": "^5.3.0",
@@ -28,10 +26,8 @@
     "jsdom-global": "^3.0.2",
     "mocha": "^6.1.4",
     "mocha-circleci-reporter": "0.0.3",
-    "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.5"
+    "rollup": "^1.17.0"
   },
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tdukart/is-integeric.git"
