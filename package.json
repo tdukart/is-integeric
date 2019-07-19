@@ -1,6 +1,6 @@
 {
   "name": "is-integeric",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Lightweight test to see if a number is integer-ish.",
   "main": "dist/index.js",
   "types": "src/index.d.ts",
