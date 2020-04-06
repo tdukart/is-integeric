@@ -5,7 +5,7 @@
 ![NPM](https://img.shields.io/npm/l/is-integeric.svg)
 ![Badges](https://img.shields.io/badge/badges-5-informational.svg)
 
-Lightweight, simple test to see if a number is an integer or can be converted to one.
+Lightweight, simple test to see if an input is an integer or can be converted to one.
 
 ```js
 import isIntegeric from 'is-integeric';
