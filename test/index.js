@@ -28,4 +28,9 @@ describe( 'isIntegeric', function () {
 		var value = isIntegeric( '?' );
 		chai.assert.equal( value, false );
 	} );
+	
+	it( 'is false for "five"', function () {
+		var value = isIntegeric( 'five' );
+		chai.assert.equal( value, false );
+	} );
 } );
