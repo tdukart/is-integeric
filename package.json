@@ -27,6 +27,7 @@
     "jsdom": "^20.0.3",
     "jsdom-global": "^3.0.2",
     "mocha": "^10.2.0",
+    "mocha-github-actions-reporter": "^0.2.0",
     "rollup": "^3.7.3",
     "rollup-plugin-babel": "^4.4.0"
   },
@@ -39,6 +40,5 @@
   },
   "homepage": "https://github.com/tdukart/is-integeric#readme",
   "dependencies": {
-    "mocha-github-actions-reporter": "^0.2.0"
   }
 }
