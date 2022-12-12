@@ -26,8 +26,8 @@
     "eslint-plugin-react": "^7.19.0",
     "jsdom": "^16.5.0",
     "jsdom-global": "^3.0.2",
-    "mocha": "^7.1.1",
-    "mocha-circleci-reporter": "0.0.3",
+    "mocha": "^10.2.0",
+    "mocha-circleci-reporter": "^0.0.3",
     "rollup": "^1.32.1",
     "rollup-plugin-babel": "^4.4.0"
   },
