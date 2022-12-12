@@ -7,7 +7,7 @@
   "scripts": {
     "build": "rollup --config",
     "prepare": "rollup --config",
-    "test": "MOCHA_FILE=test-results/test-results.xml mocha --reporter mocha-circleci-reporter -r jsdom-global/register",
+    "test": "MOCHA_FILE=test-results/test-results.xml mocha --reporter mocha-github-actions-reporter -r jsdom-global/register",
     "lint": "eslint src",
     "lint-fix": "eslint --fix src"
   },
@@ -27,7 +27,6 @@
     "jsdom": "^20.0.3",
     "jsdom-global": "^3.0.2",
     "mocha": "^10.2.0",
-    "mocha-circleci-reporter": "^0.0.3",
     "rollup": "^3.7.3",
     "rollup-plugin-babel": "^4.4.0"
   },
@@ -38,5 +37,8 @@
   "bugs": {
     "url": "https://github.com/tdukart/is-integeric/issues"
   },
-  "homepage": "https://github.com/tdukart/is-integeric#readme"
+  "homepage": "https://github.com/tdukart/is-integeric#readme",
+  "dependencies": {
+    "mocha-github-actions-reporter": "^0.2.0"
+  }
 }
