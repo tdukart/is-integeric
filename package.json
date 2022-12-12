@@ -7,28 +7,27 @@
   "scripts": {
     "build": "rollup --config",
     "prepare": "rollup --config",
-    "test": "MOCHA_FILE=test-results/test-results.xml mocha --reporter mocha-circleci-reporter -r jsdom-global/register",
+    "test": "MOCHA_FILE=test-results/test-results.xml mocha --reporter mocha-github-actions-reporter -r jsdom-global/register",
     "lint": "eslint src",
     "lint-fix": "eslint --fix src"
   },
   "author": "Todd Dukart <tdukart@mechninja.com>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.0",
-    "babel-preset-env": "^1.6.1",
-    "chai": "^4.2.0",
-    "eslint": "^5.3.0",
-    "eslint-config-airbnb": "^17.1.1",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-mocha": "^6.3.0",
-    "eslint-plugin-react": "^7.19.0",
-    "jsdom": "^16.5.0",
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.3.7",
+    "eslint": "^8.29.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-mocha": "^10.1.0",
+    "eslint-plugin-react": "^7.31.11",
+    "jsdom": "^20.0.3",
     "jsdom-global": "^3.0.2",
     "mocha": "^10.2.0",
-    "mocha-circleci-reporter": "^0.0.3",
-    "rollup": "^1.32.1",
+    "rollup": "^3.7.3",
     "rollup-plugin-babel": "^4.4.0"
   },
   "repository": {
@@ -38,5 +37,8 @@
   "bugs": {
     "url": "https://github.com/tdukart/is-integeric/issues"
   },
-  "homepage": "https://github.com/tdukart/is-integeric#readme"
+  "homepage": "https://github.com/tdukart/is-integeric#readme",
+  "dependencies": {
+    "mocha-github-actions-reporter": "^0.2.0"
+  }
 }
